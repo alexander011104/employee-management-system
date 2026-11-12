@@ -29,11 +29,11 @@ public class Employee {
     public int getId(){
         return id;
     }
-    public void setSueldo(double nuevosueldo){
-        if(nuevosueldo < 0 || !Double.isFinite(sueldo)){
+    public void setSueldo(double nuevoSueldo){
+        if(nuevoSueldo < 0 || !Double.isFinite(nuevoSueldo)){
             throw new IllegalArgumentException("Ingresa un nuevo sueldo valido. ");
         }
-        this.sueldo = nuevosueldo;
+        this.sueldo = nuevoSueldo;
     }
     @Override 
     public String toString(){
