@@ -6,7 +6,7 @@ public class Employee {
     private double sueldo;
 
     public Employee(int id, String nombre, double sueldo){
-        if(id <= 00){
+        if(id <= 0 || Double.isFinite(sueldo)){
             throw new IllegalArgumentException("Ingresa un id valido");
         }
         if(nombre == null || nombre.isBlank()){

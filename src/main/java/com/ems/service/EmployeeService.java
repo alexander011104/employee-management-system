@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class EmployeeService {
-    private ArrayList<Employee> empleados = new ArrayList<>();
+    private List<Employee> empleados = new ArrayList<>();
 
     public boolean registrarEmpleado(Employee empleado){
         for(Employee empleadoAgregado: empleados){

@@ -69,7 +69,6 @@ public class Main {
         else{
             System.out.println("El ID: "+idEliminar+" es inexistente");
         }
-        service.listarEmpleados();
         boolean primerIntentoDeEliminarAMaria = service.eliminarPorID(401);
         System.out.println("Eliminando a maria primer intento "+primerIntentoDeEliminarAMaria );
         service.listarEmpleados();
