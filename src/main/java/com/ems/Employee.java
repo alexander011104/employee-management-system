@@ -6,14 +6,14 @@ public class Employee {
     private double sueldo;
 
     public Employee(int id, String nombre, double sueldo){
-        if(id <= 0 || Double.isFinite(sueldo)){
+        if(id <= 0){
             throw new IllegalArgumentException("Ingresa un id valido");
         }
         if(nombre == null || nombre.isBlank()){
             throw new IllegalArgumentException("Ingresa un nombre");
         }
-        if(sueldo < 0){
-            throw new IllegalArgumentException("El sueldo no puede ser negativo");
+        if(sueldo < 0 || !Double.isFinite(sueldo)){
+            throw new IllegalArgumentException("Introduzca un sueldo valido");
         }
         this.id = id;
         this.nombre = nombre;

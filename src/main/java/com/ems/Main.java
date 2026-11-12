@@ -11,7 +11,7 @@ public class Main {
         EmployeeService service = new EmployeeService();
 
         //creando objetos y registrandolos en en la lista
-        Employee juan = new Employee(301, "Juan", 40000);
+        Employee juan = new Employee(301, "Juan", 1.0/0);
         Employee maria = new Employee(401, "Maria", 3900);
         Employee jose = new Employee(301, "Jose", 40000);
         boolean resultadoMaria = service.registrarEmpleado(maria);
