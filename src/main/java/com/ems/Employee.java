@@ -30,8 +30,8 @@ public class Employee {
         return id;
     }
     public void setSueldo(double nuevosueldo){
-        if(nuevosueldo < 0){
-            throw new IllegalArgumentException("No puedes modificar el sueldo para que sea negativo! ");
+        if(nuevosueldo < 0 || !Double.isFinite(sueldo)){
+            throw new IllegalArgumentException("Ingresa un nuevo sueldo valido. ");
         }
         this.sueldo = nuevosueldo;
     }
